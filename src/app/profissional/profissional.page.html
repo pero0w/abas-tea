@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title class="title">
+     PROFISSIONAL
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p class="texto2">
+    FAÇA SEU CADASTRO
+  </p>
+  <div class="content">
+    <img class="image2" src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI="/>
+  </div>
+
+  <div class="centro">
+  <ion-input class="resposta" placeholder="Nome completo" label="NOME" fill="outline"  labelPlacement="floating" maxlength="50"></ion-input>
+
+    <ion-input class="resposta"
+    placeholder="Seu email"
+    type="email"
+    fill="outline"
+    label="EMAIL 1"
+    labelPlacement="floating"
+    helperText=""
+    errorText="Email inválido"
+    ngModel
+    email></ion-input>
+
+    <ion-input class="resposta"
+    placeholder="Seu email"
+    type="email"
+    fill="outline"
+    label="EMAIL 2"
+    labelPlacement="floating"
+    helperText=""
+    errorText="Email inválido"
+    ngModel
+    email></ion-input>
+ 
+    <ion-input class="resposta" placeholder="Senha" label="SENHA" fill="outline" [counter]="false" labelPlacement="floating" maxlength="50"></ion-input>
+
+    <ion-list>
+      <ion-item>
+        <ion-select class="resposta" fill="outline" aria-label="SELECIONAR ÁREA" placeholder="SELECIONAR ÁREA">
+          <ion-select-option value="SAÚDE">SAÚDE</ion-select-option>
+          <ion-select-option value="EDUCACIONAL">EDUCACIONAL</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-input class="resposta" placeholder="Instituto de formação" label="INSTITUTO DE FORMAÇÃO" fill="outline" [counter]="false" labelPlacement="floating" maxlength="50">
+    </ion-input>
+    <ion-button  class="button3"expand="block" href="home">CADASTRAR</ion-button>
+</div>
+
+</ion-content>

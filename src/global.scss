@@ -1,0 +1,104 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.title{         /*título da aba */
+    text-align:center;
+}
+.toolbar{       /*Usado para definir a cor da barra superior*/
+    --background: #0094FF;
+    --color: white;
+}
+.content{       /*classe para colocar o conteudo em geral no centro do app*/
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    align-items: center;
+}
+.button1{       /*botão de cadastrar da primeira tela */
+    color:rgb(0, 0, 0);
+    outline-color: blue;
+    --background:rgba(132, 141, 150, 0.342);
+    max-width: 1000px;
+    padding:20px;
+}
+.button2{       /*botões da 2 tela */
+    width: 387px;
+    height:50px;
+    color: #898989;
+    --background: #D9EBFC;
+    }
+.texto1{         /*classe do texto */
+    text-align:center;
+    margin: auto;
+    color:#8A8A8A;
+    padding: 20px;
+}
+.texto2{         /*classe do texto da aba de cadastro */
+    text-align:center;
+    margin: auto;
+    color:#8A8A8A;
+    padding: 20px;
+    padding-top: 34px;
+}
+.image1{        /*imagem */
+    width: 50%;
+    align-items: center;
+}
+.image2{
+    width:40%;
+    padding-top:2%;
+}
+.centro{ 
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.resposta{
+    max-width: 400px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin:auto;
+}
+.button3{
+    width: 387px;
+    height:50px;
+    color: #898989;
+    --background: #D9EBFC;
+}
+
+/*Os dois ion-button servem para o efeito de hover ao colocar o cursor acima do botão */
+ion-button{ 
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+ion-button:hover{
+    transform: scale(1.03);
+}
